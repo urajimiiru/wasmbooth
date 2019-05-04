@@ -5,7 +5,7 @@
   "main": "lib/main.js",
   "scripts": {
     "test": "cargo test",
-    "build-wasm": "cargo +nightly build --release --target wasm32-unknown-unknown && mv target/wasm32-unknown-unknown/release/wasmbooth.wasm public",
+    "build-wasm": "cargo build --release --target wasm32-unknown-unknown && mv target/wasm32-unknown-unknown/release/wasmbooth.wasm public",
     "build-js": "webpack .",
     "build": "npm run build-wasm && npm run build-js",
     "build-web": "npm run build && cp -a public/. docs/",
