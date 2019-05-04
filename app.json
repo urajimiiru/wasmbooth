@@ -1,0 +1,19 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/steveklabnik/heroku-buildpack-rust-wasm.git"
+    }
+  ],
+  "description": "image filters and processing on wasm",
+  "env": {
+  },
+  "formation": {
+  },
+  "name": "wasmup",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
